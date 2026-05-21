@@ -2,7 +2,7 @@
 
 #### To Do (Priority):  
 
-- [x] Create a Repo and design the website. A static Restaurant website to book and buy meals
+- [x] Create a Repo to design the website. A static Restaurant website to book and buy meals
 - [ ] Add Contributors.
 - [ ] Folder structure.
 - [ ] Agree on deadlines and assign tasks
