@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    /* NAVBAR */
+    header{
+      background:#000;
+      border-bottom:4px solid #FFD700;
+      padding:20px 40px;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:#FFD700;
+      font-size:30px;
+      font-weight:bold;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:20px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:white;
+      padding:10px 18px;
+      border-radius:5px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .nav-links a:hover{
+      background:#FFD700;
+      color:black;
+    }
+
+    /* HERO */
+    .hero{
+      padding:50px 30px;
+      text-align:center;
+      background:linear-gradient(to right, #1a1a1a, #2b2b2b);
+    }
+
+    .hero h1{
+      font-size:50px;
+      color:#FFD700;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      color:#ccc;
+      font-size:18px;
+    }
+
+    /* STATISTICS */
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+      gap:25px;
+      padding:40px;
+    }
+
+    .card{
+      background:#1f1f1f;
+      border-left:6px solid #FFD700;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.5);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h2{
+      color:#FFD700;
+      font-size:18px;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      font-size:35px;
+      font-weight:bold;
+    }
+
+    /* IMAGE SECTION */
+    .gallery{
+      padding:40px;
+    }
+
+    .gallery h2{
+      text-align:center;
+      color:#FFD700;
+      margin-bottom:30px;
+      font-size:35px;
+    }
+
+    .image-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .image-box{
+      background:#222;
+      border:3px solid #FFD700;
+      border-radius:10px;
+      overflow:hidden;
+      height:250px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#999;
+      font-size:18px;
+    }
+
+    .image-box img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    /* SALES TABLE */
+    .table-section{
+      padding:40px;
+    }
+
+    .table-section h2{
+      color:#FFD700;
+      margin-bottom:20px;
+      text-align:center;
+      font-size:35px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#1f1f1f;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    th{
+      background:#FFD700;
+      color:black;
+      padding:15px;
+      text-align:left;
+    }
+
+    td{
+      padding:15px;
+      border-bottom:1px solid #333;
+    }
+
+    tr:hover{
+      background:#2a2a2a;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#000;
+      border-top:4px solid #FFD700;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+      color:#aaa;
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero h1{
+        font-size:36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Zani_eatery</div>
+
+      <div class="nav-links">
+        <a href="orders.html">Orders</a>
+        <a href="menu.html">Menu</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>“Built in the Kasi. Loved Everywhere.”</h1>
+    <p>.</p>
+  </section>
+
+  <!-- STATISTICS -->
+  <section class="stats">
+
+    <div class="card">
+      <h2>Total Orders</h2>
+      <p>76</p>
+    </div>
+
+    <div class="card">
+      <h2>Estimated Daily income</h2>
+      <p>R3,450</p>
+    </div>
+
+    <div class="card">
+      <h2>New Customers</h2>
+      <p>25</p>
+    </div>
+
+    <div class="card">
+      <h2>Best Seller</h2>
+      <p>Promo</p>
+    </div>
+
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="gallery">
+    <h2>Featured Food Items</h2>
+
+    <div class="image-grid">
+
+      <!-- IMAGE 1 -->
+      <div class="image-box">
+        <img src="C:\Users\mulau\Desktop\Website\AWS_re-Start_S3_WebHosting_Project\resources\images\Drink.JPEG" alt="Burger">
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div class="image-box">
+        <img src="C:\Users\mulau\Desktop\Website\AWS_re-Start_S3_WebHosting_Project\resources\images\Burger.JPEG" alt="Burger" alt="Pizza">
+      </div>
+
+      <!-- IMAGE 3 -->
+      <div class="image-box">
+        <img src="C:\Users\mulau\Desktop\Website\AWS_re-Start_S3_WebHosting_Project\resources\images\Chips.JPEG" alt="Burger" alt="Fries">
+      </div>
+
+      <!-- IMAGE 4 -->
+      <div class="image-box">
+        <img src="C:\Users\mulau\Desktop\Website\AWS_re-Start_S3_WebHosting_Project\resources\images\Promo.JPEG" alt="Burger" alt="Promo">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SALES TABLE -->
+  <section class="table-section">
+    <h2>Weekly Sales Report</h2>
+
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Orders</th>
+
+      </tr>
+
+      <tr>
+        <td>Monday</td>
+        <td>65</td>
+      </tr>
+
+      <tr>
+        <td>Tuesday</td>
+        <td>59</td>
+      </tr>
+
+      <tr>
+        <td>Wednesday</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>Thursday</td>
+        <td>63</td>
+      </tr>
+
+      <tr>
+        <td>Friday</td>
+        <td>85</td>
+      </tr>
+
+    </table>
+  </section>
+
+  <footer>
+    © 2026 Zani_eatery Dashboard
+  </footer>
+
+</body>
+</html>
