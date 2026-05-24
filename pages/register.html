@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patron Registry — Zani's Eatery</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Lucide Iconography -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- CSS - One CSS file per page rule, which imports main.css -->
+    <link rel="stylesheet" href="../styles/register.css" />
+  </head>
+  <body>
+
+    <!-- NAVBAR HEADER -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="../index.html" class="logo">
+          <span class="logo-text">L'AURA</span>
+          <span class="logo-sub">BISTRO</span>
+        </a>
+        
+        <nav class="nav-links">
+          <a href="../index.html" class="nav-item">Home</a>
+          <a href="menu.html" class="nav-item">Culinary Menu</a>
+          <a href="orders-history.html" class="nav-item">My Bookings</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="orders.html" class="cart-anchor" title="View Gourmet Selection">
+            <i data-lucide="shopping-cart" class="cart-icon"></i>
+            <span class="cart-badge" id="cart-badge" style="display: none;">0</span>
+          </a>
+          <div id="navbar-auth-container" class="auth-box">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- REGISTER CANVAS -->
+    <main class="max-width-container flex justify-center align-center" style="min-height:75vh; padding: 4rem 1.5rem;">
+      
+      <div class="auth-bounding-card card-no-hover flex-column align-center">
+        
+        <div class="auth-brand-logo flex-column align-center text-center">
+          <span class="brand-crest">Z</span>
+          <h1 class="brand-title font-serif mt-2"><span style="color:#ffffff;">ZANI'S</span> <span style="color:var(--accent-gold);">EATERY</span></h1>
+          <p class="brand-subtitle text-xs text-secondary font-mono mt-1 uppercase tracking-wide">Join the Eatery Society</p>
+        </div>
+
+        <form id="register-form" class="auth-form-body flex-column gap-4 w-full mt-6">
+          
+          <div class="form-group flex-column">
+            <label for="name" class="field-label text-xs text-secondary">Your Complete Name *</label>
+            <div class="input-icon-frame position-relative">
+              <i data-lucide="user" class="prefix-input-icon"></i>
+              <input type="text" id="name" class="input-field-with-icon" placeholder="e.g. Sipho Khumalo" required autocomplete="name">
+            </div>
+          </div>
+
+          <div class="form-group flex-column">
+            <label for="email" class="field-label text-xs text-secondary">Your Email Address *</label>
+            <div class="input-icon-frame position-relative">
+              <i data-lucide="mail" class="prefix-input-icon"></i>
+              <input type="email" id="email" class="input-field-with-icon" placeholder="e.g. sipho@domain.co.za" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group flex-column">
+            <label for="password" class="field-label text-xs text-secondary">Choose a Passkey / Password *</label>
+            <div class="input-icon-frame position-relative">
+              <i data-lucide="lock" class="prefix-input-icon"></i>
+              <input type="password" id="password" class="input-field-with-icon" placeholder="Minimum 6 characters" required autocomplete="new-password">
+            </div>
+          </div>
+
+          <div class="form-group flex-column">
+            <label for="confirm-password" class="field-label text-xs text-secondary">Confirm Passkey / Password *</label>
+            <div class="input-icon-frame position-relative">
+              <i data-lucide="check" class="prefix-input-icon"></i>
+              <input type="password" id="confirm-password" class="input-field-with-icon" placeholder="Re-enter passkey" required autocomplete="new-password">
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn-primary w-full btn-auth-trigger mt-1 flex-items justify-center gap-2">
+            <i data-lucide="user-plus" style="width:16px; height:16px;"></i> Register Patron Identity
+          </button>
+
+        </form>
+
+        <div class="auth-navigation-footer mt-5 text-sm text-center">
+          <span class="text-secondary">Already a Bistro Member?</span>
+          <a href="login.html" class="footer-navigation-link text-accent text-semibold">Gain Admission Entrance <i data-lucide="arrow-right" class="inline-arrow" style="width:14px; height:14px; display:inline-block; vertical-align:middle;"></i></a>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+
+    <!-- Core Authorization Logic (Vanilla JS) -->
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/auth.js"></script>
+  </body>
+</html>
