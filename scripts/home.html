@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zani's Eatery | Where Great Friends Meet Great Food</title>
+    <!-- Google Fonts: Montserrat for clean, modern sans-serif typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Style link -->
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="navbar-header">
+        <div class="nav-container">
+            <div class="logo">
+                ZANI'S <span class="accent-text">EATERY</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#Reservations">RESERVATIONS</a></li>					
+                    <li><a href="#orders" id="nav-orders">ORDERS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-action">
+                <!-- Added id="auth-btn" to manage Sign In / Sign Out state dynamically -->
+                <a href="#signin" id="auth-btn" class="btn btn-signin">SIGN IN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+        <!-- Background Image styled with object-fit -->
+        <img src="homemade-tasty-sandwich-wooden-cutting-board-fries-left-side-blurred-surface.jpg" 
+             alt="Tasty sandwich on wooden cutting board with fries" 
+             class="hero-bg-img">
+             
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Where Great Friends <br>Meet Great Food</h1>
+                <!-- Added id="hero-order-btn" to target with JavaScript -->
+                <a href="#" id="hero-order-btn" class="btn btn-order">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Food Gallery Section -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="gallery1.jpg" alt="Double Cheeseburger Meal" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name">Double Cheeseburger, Sausage and Wings</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="gallery2.jpg" alt="Chicken Wrap with sausage and Chips" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name">Chicken Wrap with Sausage and Chips</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="gallery3.jpg" alt="Waffles and Ice Cream with Burger Plate" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name">Waffles and Ice Cream with Burger Plate</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="gallery4.jpg" alt="Zani's Oreo Chocolate Milkshakes" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name">Zani's Oreo Chocolate Milkshakes</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="gallery5.jpg" alt="Double Burgers, Ribs, and Loaded Fries" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name">Double Cheese Burger, Wings, and Loaded Fries</h3>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="gallery6.jpg" alt="Table Feast Wrap, Burger, Ribs, and Drinks" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h3 class="meal-name"> chicken Wrap, Burger, and Sausage</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference to external JavaScript file -->
+    <script src="home.js"></script>
+
+</body>
+</html>
