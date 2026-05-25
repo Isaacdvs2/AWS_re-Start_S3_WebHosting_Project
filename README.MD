@@ -2,26 +2,37 @@
 ---
 <details>
 <summary>View Contributors/Authors</summary>
->aka Group 3
-- Masekela Isaac Maake
-- Phillip Thwala
-- Feziwe Mazibuko
-- Gugulethu Oliphant
-- Mr. Phadagi
-- Thato
+
+> aka Group 3 
+
+- Masekela Isaac Maake  
+
+- Phillip Thwala  
+
+- Feziwe Mazibuko  
+
+- Gugulethu Oliphant  
+
+- Mr. Phadagi  
+
+- Frans Moifa Phala
+ 
 </details>
 
 ---
 
 ## An AWS Capstone project to host a static Website in Amazon S3.
 ---
+
 ### Introduction
 The aim of this project is to take you through the journey of Zani's restaurant from a restaurant operating in the townships to its glory days of operating World wide in multiple countries. As cloud practitioners, we are tasked with finding solutions to Zani's I.T issues and painpoints using AWS Cloud Services.
 
 The aim is also to encourage businesses to adopt tech to take advantage of global reach and expansion, where AWS Cloud Services can help them in achieving such a goal.
 
 Although the website will be hosted on AWS S3 only with no other services interacting/connected to it due for financial reasons, the AWS contributors on this project would like to demonstrate their experties of AWS services and cover most ground. Section one will address the the journey, the pain points and requirements, whilst section 2 will adress and justify the AWS possible solutions.
+
 ---
+
 ### 1. Business Context & Requirements
 In this section we introduce Zani's restaurant and walk you throught eh major changes as the restaurant grows. Taking note of the challenges faced at each stage which make up some of the requirements Zani's restaurant that will be solved using AWS solutions.
 #### 1.1 Stage 1: In The Beginnig.
@@ -238,7 +249,8 @@ This architecture is suitable for the restaurant company because it provides a *
 
 It ensures high availability, performance, and security for the restaurant system by using load balancing and auto scaling to handle peak traffic periods such as busy dining hours. The use of a Multi-AZ database guarantees continuous operation even during failures, while the VPC design with public and private subnets protects sensitive data by isolating core components from direct internet access. Additionally, services like Route 53 and CloudFront improve user experience by enabling fast and reliable access to applications across different locations.
 
-At the same time, the solution enables seamless data migration and centralized data management through AWS DMS and RDS, eliminating inconsistencies between branches and supporting real-time reporting. Monitoring tools like CloudWatch provide visibility into system performance, while cost management services such as Cost Explorer and Trusted Advisor help control spending.
+At the same time, the solution enables seamless data migration and centralized data management through AWS DMS and RDS, eliminating inconsistencies between branches and supporting real-time reporting. Monitoring tools like CloudWatch provide visibility into system performance, while cost management services such as Cost Explorer and Trusted Advisor help control spending.  
+
 ---
 
 ### 2. The Hosted Website
@@ -247,10 +259,61 @@ The wbsite is accessed at [Click Here](http://aws-restart-03.s3-website.af-south
 #### 2.1 Website Features
 
 - **Landing Page**
+
+<a href="./diagrams/websiteimages/homepage.jpeg">
+  <img src="./diagrams/websiteimages/homepage.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
 - **Login Page**
+
+<a href="./diagrams/websiteimages/login.jpeg">
+  <img src="./diagrams/websiteimages/login.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
 - **Restaurant Menu's**
+
+<a href="./diagrams/websiteimages/menu.jpeg">
+  <img src="./diagrams/websiteimages/menu.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
 - **Orders Page**
+
+<a href="./diagrams/websiteimages/orders.jpeg">
+  <img src="./diagrams/websiteimages/orders.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
+- **User friendly Interface with Modals**
+
+<a href="./diagrams/websiteimages/modals.jpeg">
+  <img src="./diagrams/websiteimages/modals.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
 - **Analytics for Owners and Managers**
+
+<a href="./diagrams/websiteimages/dashboard1.jpeg">
+  <img src="./diagrams/websiteimages/dashboard1.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
+Managers can also view performance per customer
+
+<a href="./diagrams/websiteimages/dashboard2.jpeg">
+  <img src="./diagrams/websiteimages/dashboard2.jpeg" 
+       alt="zani's restaurant image" 
+       style="width: 100%; max-width: 900px; height: auto;">
+</a>
+
 
 ---
 
@@ -258,9 +321,13 @@ The wbsite is accessed at [Click Here](http://aws-restart-03.s3-website.af-south
 - Amazon DynamoDB (NoSQL Database): Replace or complement RDS for high-speed, scalable operations. 
 - Amazon SNS (Simple Notification Service): Introduce real-time notifications to staff and customers. Order confirmation alerts and SMS/email notifications to customers.
 - AWS Cognito: Replace custom authentication system
+
 ---
 
-### 4. Team Assigned Tasks
+### 4. Assigned Team Tasks
+<details>
+<summary>View Team Tasks</summary>
+
 **To Do (Priority)**:  
 
 - [x] Create a Repo to design the website. A static Restaurant website to book and buy meals
@@ -271,4 +338,6 @@ The wbsite is accessed at [Click Here](http://aws-restart-03.s3-website.af-south
 
 **To Do (Enhance the Readme)**:
 - [x] Add more details regarding the project, lessons leant, etc...
+
+<details/>
 ---
