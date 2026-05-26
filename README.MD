@@ -9,7 +9,7 @@
 
 - Phillip Thwala  
 
-- Feziwe Mazibuko  
+- Feziwe Kohli  
 
 - Gugulethu Oliphant  
 
